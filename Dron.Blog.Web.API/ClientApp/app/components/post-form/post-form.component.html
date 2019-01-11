@@ -1,0 +1,78 @@
+<h1>{{pageTitle}}</h1>
+
+<form class="post-form" [formGroup]="postForm" (ngSubmit)="onSubmit()">
+<div class="col-xs-12">
+
+  <!-- Id -->
+  <div *ngIf="id" class="form-group form-horizontal">
+    <div class="row">
+      <label class="col-xs-1 control-label text-align-left">Id:</label>
+      <div class="col-xs-11"> 
+        <p class="form-control-static">{{id}}</p> 
+      </div>
+    </div>
+  </div>
+
+  <!-- Title -->
+  <div class="form-group has-feedback" [class.has-error]="validateControl('title')">
+    <label class="center-block">
+      <input type="text" class="form-control" formControlName="title">
+      <span class="glyphicon glyphicon-remove form-control-feedback" *ngIf="validateControl('title')">
+      </span>
+    </label>
+  </div>
+
+  <!-- ShortContent -->
+  <div class="form-group has-feedback" [class.has-error]="validateControl('shortContent')">
+    <label class="center-block">
+      <textarea type="text" class="form-control content-textarea" formControlName="shortContent"></textarea>
+      <span class="glyphicon glyphicon-remove form-control-feedback" *ngIf="validateControl('shortContent')"></span>
+    </label>
+  </div>
+
+  <!-- Content -->
+  <div class="form-group has-feedback" [class.has-error]="validateControl('content')">
+    <label class="center-block">
+      <textarea type="text" class="form-control content-textarea" formControlName="content"></textarea>
+      <span class="glyphicon glyphicon-remove form-control-feedback" *ngIf="validateControl('content')"></span>
+    </label>
+  </div>
+
+  <!-- Category -->
+  <div class="form-group has-feedback" [class.has-error]="validateControl('categoryId')">
+    <label class="center-block">
+      <select class="form-control" formControlName="categoryId">
+        <option *ngIf="!postForm.controls['categoryId'].value" value=""></option>
+        <option *ngFor="let c of categories" value="{{c.id}}">{{c.name}}</option>
+      </select>
+      <span class="glyphicon glyphicon-remove form-control-feedback" *ngIf="validateControl('categoryId')"></span>
+    </label>
+  </div>
+
+  <!-- Tags -->
+  <div class="form-group">
+    <label class="center-block">
+      <tag-input (input)="onTagsChange($event.target.value)" [identifyBy]="'id'" [displayBy]="'name'" formControlName="tags">
+          <tag-input-dropdown [identifyBy]="'id'" [displayBy]="'name'" [autocompleteItems]="autocompleteTags"></tag-input-dropdown>
+      </tag-input>
+    </label>
+  </div>
+
+  <!-- Date Created -->
+  <div *ngIf="id" class="form-group form-horizontal">
+    <div class="row">
+      <label class="col-xs-12 col-sm-1 control-label text-align-left">Created:</label>
+      <div class="col-xs-12 col-sm-11"> 
+        <p class="form-control-static">{{dateCreated}}</p> 
+      </div>
+    </div>
+  </div>
+
+  <!-- Buttons [disabled]="postForm.invalid" -->
+  <div class="form-group btn-toolbar">
+    <button type="submit" class="btn btn-primary" [disabled]="postForm.invalid">Save</button>
+    <button type="button" *ngIf="id" class="btn btn-danger" (click)="delete()">Delete</button>
+    <a [routerLink]="['/admin']" class="btn btn-primary">Back</a>
+  </div>
+</div>
+</form>

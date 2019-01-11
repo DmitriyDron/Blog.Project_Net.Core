@@ -1,0 +1,29 @@
+.posts-table {
+  font-size: 14px;
+}
+
+  .posts-table > tbody > tr > td {
+    border-top: 1px solid #ddd
+  }
+
+th {
+  text-align: center;
+}
+
+
+.title-column {
+  width: 200px;
+}
+
+
+.tag-column {
+  width: 180px;
+}
+
+.date-column {
+  width: 80px;
+}
+
+.menu-column {
+  width: 130px;
+}
