@@ -20,20 +20,22 @@ import { PostService } from './services/post.service';
 import { CategoryService } from './services/category.service';
 import { TagService } from './services/tag.service';
 import { GlobalEventsService } from './services/global-events.service';
+import { TestComponent } from './components/test/test.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         NavMenuComponent,
-        CounterComponent,
-        FetchDataComponent,
-        HomeComponent,
         PostsComponent,
         PostformComponent,
         PaginationComponent,
         PostviewComponent,
         BlogComponent,
-        CategoriesComponent
+        CounterComponent,
+        FetchDataComponent,
+        CategoriesComponent,
+        TestComponent
+        
     ],
     imports: [
         CommonModule,
@@ -53,7 +55,7 @@ import { GlobalEventsService } from './services/global-events.service';
             { path: 'post/create', component: PostformComponent},
             { path: 'post/:id', component: PostviewComponent },
             { path: 'post/edit/:id', component: PostformComponent},
-           
+            { path: 'test', component: TestComponent },
             { path: 'error', redirectTo: '' },
             { path: 'home', redirectTo: '' },
             { path: '**', redirectTo: '' }

@@ -1,0 +1,1295 @@
+2019-01-11 20:16:49.534 +02:00 [INF] Executing ViewResult, running view Index.
+2019-01-11 20:16:56.796 +02:00 [INF] Executed ViewResult - view Index executed in 7345.8271ms.
+2019-01-11 20:16:56.808 +02:00 [INF] Executed action Dron.Blog.Web.API.Controllers.HomeController.Index (Dron.Blog.Web.API) in 7656.2085000000006ms
+2019-01-11 20:16:56.814 +02:00 [INF] Request finished in 10338.0634ms 200 text/html; charset=utf-8
+2019-01-11 20:16:56.831 +02:00 [INF] Executed ViewResult - view Index executed in 7344.5787ms.
+2019-01-11 20:16:56.832 +02:00 [INF] Executed action Dron.Blog.Web.API.Controllers.HomeController.Index (Dron.Blog.Web.API) in 7680.7840000000006ms
+2019-01-11 20:16:56.834 +02:00 [INF] Request finished in 10337.9343ms 200 text/html; charset=utf-8
+2019-01-11 20:16:59.634 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5873/api/posts/query?search=&sortBy=DateCreated&isSortAscending=false&page=1&pageSize=5  
+2019-01-11 20:16:59.822 +02:00 [INF] Route matched with {action = "GetPostsQuery", controller = "Posts"}. Executing action Blog.Web.API.Controllers.PostsController.GetPostsQuery (Dron.Blog.Web.API)
+2019-01-11 20:17:00.044 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5873/dist/__webpack_hmr  
+2019-01-11 20:17:00.228 +02:00 [INF] Executing action method Blog.Web.API.Controllers.PostsController.GetPostsQuery (Dron.Blog.Web.API) with arguments (["Blog.BLL.DTO.Blog.Query.PostQueryDTO"]) - Validation state: "Valid"
+2019-01-11 20:17:00.397 +02:00 [INF] Entity Framework Core 2.1.1-rtm-30846 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-01-11 20:17:00.664 +02:00 [INF] webpack built 93c326de4da02fa7be81 in 29613ms
+2019-01-11 20:17:00.736 +02:00 [ERR] Hash: 93c326de4da02fa7be81
+Version: webpack 4.5.0
+Time: 29613ms
+Built at: 2019-1-11 20:17:00
+             Asset      Size       Chunks             Chunk Names
+    main-client.js  4.14 MiB  main-client  [emitted]  main-client
+main-client.js.map  28.5 KiB  main-client  [emitted]  main-client
+Entrypoint main-client = main-client.js main-client.js.map
+[./ClientApp/app/app.browser.module.ts] 1.45 KiB {main-client} [built]
+[./ClientApp/boot.browser.ts] 989 bytes {main-client} [built]
+[./node_modules/@angular/core/fesm5/core.js] 665 KiB {main-client} [built] [2 warnings]
+[./node_modules/@angular/platform-browser-dynamic/fesm5/platform-browser-dynamic.js] 20.2 KiB {main-client} [built]
+[./node_modules/bootstrap/dist/js/npm.js] delegated ./node_modules/bootstrap/dist/js/npm.js from dll-reference vendor_4adf5b975b06d7f766a2 42 bytes {main-client} [built]
+[./node_modules/event-source-polyfill/src/eventsource.js] 20.9 KiB {main-client} [built]
+[./node_modules/querystring-es3/index.js] 127 bytes {main-client} [built]
+[./node_modules/reflect-metadata/Reflect.js] 51.1 KiB {main-client} [built]
+[./node_modules/strip-ansi/index.js] 161 bytes {main-client} [built]
+[./node_modules/webpack-hot-middleware/client-overlay.js] (webpack)-hot-middleware/client-overlay.js 2.16 KiB {main-client} [built]
+[./node_modules/webpack-hot-middleware/client.js?path=dist%2F__webpack_hmr&dynamicPublicPath=true] (webpack)-hot-middleware/client.js?path=dist%2F__webpack_hmr&dynamicPublicPath=true 7.18 KiB {main-client} [built]
+[./node_modules/webpack-hot-middleware/process-update.js] (webpack)-hot-middleware/process-update.js 4.23 KiB {main-client} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 519 bytes {main-client} [built]
+   [0] multi event-source-polyfill webpack-hot-middleware/client?path=dist%2F__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot.browser.ts 52 bytes {main-client} [built]
+[./node_modules/zone.js/dist/zone.js] delegated ./node_modules/zone.js/dist/zone.js from dll-reference vendor_4adf5b975b06d7f766a2 42 bytes {main-client} [built]
+    + 275 hidden modules
+
+WARNING in ./node_modules/@angular/core/fesm5/core.js
+5556:15-36 Critical dependency: the request of a dependency is an expression
+ @ ./node_modules/@angular/core/fesm5/core.js
+ @ ./ClientApp/boot.browser.ts
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=dist%2F__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot.browser.ts
+
+WARNING in ./node_modules/@angular/core/fesm5/core.js
+5568:15-102 Critical dependency: the request of a dependency is an expression
+ @ ./node_modules/@angular/core/fesm5/core.js
+ @ ./ClientApp/boot.browser.ts
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=dist%2F__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot.browser.ts
+
+WARNING in ./node_modules/@angular/core/fesm5/core.js
+System.import() is deprecated and will be removed soon. Use import() instead.
+For more info visit https://webpack.js.org/guides/code-splitting/
+ @ ./ClientApp/boot.browser.ts 5556:15-36 4:0-47
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=dist%2F__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot.browser.ts
+
+WARNING in ./node_modules/@angular/core/fesm5/core.js
+System.import() is deprecated and will be removed soon. Use import() instead.
+For more info visit https://webpack.js.org/guides/code-splitting/
+ @ ./ClientApp/boot.browser.ts 5568:15-102 4:0-47
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=dist%2F__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot.browser.ts
+
+ERROR in ./ClientApp/app/components/blog/blog.component.ts
+Module not found: Error: Can't resolve '../../utils/extensions' in 'C:\Users\luice\source\repos\Dron.Blog\Dron.Blog.Web.API\ClientApp\app\components\blog'
+ @ ./ClientApp/app/components/blog/blog.component.ts 13:0-32
+ @ ./ClientApp/app/app.shared.module.ts
+ @ ./ClientApp/app/app.browser.module.ts
+ @ ./ClientApp/boot.browser.ts
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=dist%2F__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot.browser.ts
+
+ERROR in ./ClientApp/app/components/post-form/post-form.component.ts
+Module not found: Error: Can't resolve '../../utils/extensions' in 'C:\Users\luice\source\repos\Dron.Blog\Dron.Blog.Web.API\ClientApp\app\components\post-form'
+ @ ./ClientApp/app/components/post-form/post-form.component.ts 17:0-32
+ @ ./ClientApp/app/app.shared.module.ts
+ @ ./ClientApp/app/app.browser.module.ts
+ @ ./ClientApp/boot.browser.ts
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=dist%2F__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot.browser.ts
+
+ERROR in ./ClientApp/app/components/post-view/post-view.component.ts
+Module not found: Error: Can't resolve '../../utils/extensions' in 'C:\Users\luice\source\repos\Dron.Blog\Dron.Blog.Web.API\ClientApp\app\components\post-view'
+ @ ./ClientApp/app/components/post-view/post-view.component.ts 13:0-32
+ @ ./ClientApp/app/app.shared.module.ts
+ @ ./ClientApp/app/app.browser.module.ts
+ @ ./ClientApp/boot.browser.ts
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=dist%2F__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot.browser.ts
+
+ERROR in ./ClientApp/app/components/posts/posts.component.ts
+Module not found: Error: Can't resolve '../../utils/extensions' in 'C:\Users\luice\source\repos\Dron.Blog\Dron.Blog.Web.API\ClientApp\app\components\posts'
+ @ ./ClientApp/app/components/posts/posts.component.ts 14:0-32
+ @ ./ClientApp/app/app.shared.module.ts
+ @ ./ClientApp/app/app.browser.module.ts
+ @ ./ClientApp/boot.browser.ts
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=dist%2F__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot.browser.ts
+2019-01-11 20:17:00.974 +02:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing action Dron.Blog.Web.API.Controllers.HomeController.Index (Dron.Blog.Web.API)
+2019-01-11 20:17:00.974 +02:00 [INF] Executing action method Dron.Blog.Web.API.Controllers.HomeController.Index (Dron.Blog.Web.API) - Validation state: "Valid"
+2019-01-11 20:17:00.975 +02:00 [INF] Executed action method Dron.Blog.Web.API.Controllers.HomeController.Index (Dron.Blog.Web.API), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0235ms.
+2019-01-11 20:17:00.976 +02:00 [INF] Executing ViewResult, running view Index.
+2019-01-11 20:17:01.593 +02:00 [INF] Executed ViewResult - view Index executed in 618.10020000000009ms.
+2019-01-11 20:17:01.594 +02:00 [INF] Executed action Dron.Blog.Web.API.Controllers.HomeController.Index (Dron.Blog.Web.API) in 619.4409ms
+2019-01-11 20:17:01.594 +02:00 [INF] Request finished in 1550.5844ms 200 text/html; charset=utf-8
+2019-01-11 20:17:01.793 +02:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Content], [p].[DateCreated], [p].[DateLastUpdated], [p].[IsActive], [p].[ShortContent], [p].[Title], [p.Category].[Id], [p.Category].[DateCreated], [p.Category].[DateLastUpdated], [p.Category].[IsActive], [p.Category].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Category] AS [p.Category] ON [p].[CategoryId] = [p.Category].[Id]
+ORDER BY [p].[Id]
+2019-01-11 20:17:02.040 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p.Tags].[PostId], [p.Tags].[TagId], [p.Tag].[Id], [p.Tag].[DateCreated], [p.Tag].[DateLastUpdated], [p.Tag].[IsActive], [p.Tag].[Name]
+FROM [PostTag] AS [p.Tags]
+INNER JOIN [Tag] AS [p.Tag] ON [p.Tags].[TagId] = [p.Tag].[Id]
+INNER JOIN (
+    SELECT DISTINCT [p0].[Id]
+    FROM [Post] AS [p0]
+    INNER JOIN [Category] AS [p.Category0] ON [p0].[CategoryId] = [p.Category0].[Id]
+) AS [t] ON [p.Tags].[PostId] = [t].[Id]
+ORDER BY [t].[Id]
+2019-01-11 20:17:02.069 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Content], [p].[DateCreated], [p].[DateLastUpdated], [p].[IsActive], [p].[ShortContent], [p].[Title], [p.Category].[Id], [p.Category].[DateCreated], [p.Category].[DateLastUpdated], [p.Category].[IsActive], [p.Category].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Category] AS [p.Category] ON [p].[CategoryId] = [p.Category].[Id]
+ORDER BY [p].[Id]
+2019-01-11 20:17:02.071 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p.Tags].[PostId], [p.Tags].[TagId], [p.Tag].[Id], [p.Tag].[DateCreated], [p.Tag].[DateLastUpdated], [p.Tag].[IsActive], [p.Tag].[Name]
+FROM [PostTag] AS [p.Tags]
+INNER JOIN [Tag] AS [p.Tag] ON [p.Tags].[TagId] = [p.Tag].[Id]
+INNER JOIN (
+    SELECT DISTINCT [p0].[Id]
+    FROM [Post] AS [p0]
+    INNER JOIN [Category] AS [p.Category0] ON [p0].[CategoryId] = [p.Category0].[Id]
+) AS [t] ON [p.Tags].[PostId] = [t].[Id]
+ORDER BY [t].[Id]
+2019-01-11 20:17:02.092 +02:00 [WRN] The Include operation for navigation '[p].Category' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-01-11 20:17:02.096 +02:00 [WRN] The Include operation for navigation '[p].Tags.Tag' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-01-11 20:17:02.326 +02:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Post] AS [p]
+2019-01-11 20:17:02.448 +02:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Content], [p].[DateCreated], [p].[DateLastUpdated], [p].[IsActive], [p].[ShortContent], [p].[Title], [p.Category].[Id], [p.Category].[DateCreated], [p.Category].[DateLastUpdated], [p.Category].[IsActive], [p.Category].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Category] AS [p.Category] ON [p].[CategoryId] = [p.Category].[Id]
+ORDER BY [p].[Id]
+2019-01-11 20:17:02.480 +02:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p.Tags].[PostId], [p.Tags].[TagId], [p.Tag].[Id], [p.Tag].[DateCreated], [p.Tag].[DateLastUpdated], [p.Tag].[IsActive], [p.Tag].[Name]
+FROM [PostTag] AS [p.Tags]
+INNER JOIN [Tag] AS [p.Tag] ON [p.Tags].[TagId] = [p.Tag].[Id]
+INNER JOIN (
+    SELECT DISTINCT [p0].[Id]
+    FROM [Post] AS [p0]
+    INNER JOIN [Category] AS [p.Category0] ON [p0].[CategoryId] = [p.Category0].[Id]
+) AS [t] ON [p.Tags].[PostId] = [t].[Id]
+ORDER BY [t].[Id]
+2019-01-11 20:17:02.515 +02:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Content], [p].[DateCreated], [p].[DateLastUpdated], [p].[IsActive], [p].[ShortContent], [p].[Title], [p.Category].[Id], [p.Category].[DateCreated], [p.Category].[DateLastUpdated], [p.Category].[IsActive], [p.Category].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Category] AS [p.Category] ON [p].[CategoryId] = [p.Category].[Id]
+ORDER BY [p].[Id]
+2019-01-11 20:17:02.533 +02:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p.Tags].[PostId], [p.Tags].[TagId], [p.Tag].[Id], [p.Tag].[DateCreated], [p.Tag].[DateLastUpdated], [p.Tag].[IsActive], [p.Tag].[Name]
+FROM [PostTag] AS [p.Tags]
+INNER JOIN [Tag] AS [p.Tag] ON [p.Tags].[TagId] = [p.Tag].[Id]
+INNER JOIN (
+    SELECT DISTINCT [p0].[Id]
+    FROM [Post] AS [p0]
+    INNER JOIN [Category] AS [p.Category0] ON [p0].[CategoryId] = [p.Category0].[Id]
+) AS [t] ON [p.Tags].[PostId] = [t].[Id]
+ORDER BY [t].[Id]
+2019-01-11 20:17:02.670 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Content], [p].[DateCreated], [p].[DateLastUpdated], [p].[IsActive], [p].[ShortContent], [p].[Title], [p.Category].[Id], [p.Category].[DateCreated], [p.Category].[DateLastUpdated], [p.Category].[IsActive], [p.Category].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Category] AS [p.Category] ON [p].[CategoryId] = [p.Category].[Id]
+ORDER BY [p].[DateCreated] DESC, [p].[Id]
+2019-01-11 20:17:02.687 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p.Tags].[PostId], [p.Tags].[TagId], [p.Tag].[Id], [p.Tag].[DateCreated], [p.Tag].[DateLastUpdated], [p.Tag].[IsActive], [p.Tag].[Name]
+FROM [PostTag] AS [p.Tags]
+INNER JOIN [Tag] AS [p.Tag] ON [p.Tags].[TagId] = [p.Tag].[Id]
+INNER JOIN (
+    SELECT DISTINCT [p0].[Id], [p0].[DateCreated]
+    FROM [Post] AS [p0]
+    INNER JOIN [Category] AS [p.Category0] ON [p0].[CategoryId] = [p.Category0].[Id]
+) AS [t] ON [p.Tags].[PostId] = [t].[Id]
+ORDER BY [t].[DateCreated] DESC, [t].[Id]
+2019-01-11 20:17:02.727 +02:00 [WRN] The Include operation for navigation '[p].Category' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-01-11 20:17:02.727 +02:00 [WRN] The Include operation for navigation '[p].Tags.Tag' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-01-11 20:17:02.844 +02:00 [INF] Executed DbCommand (33ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_0) [p].[Id], [p].[Title], [p].[ShortContent], [p.Category].[Name], [p].[DateCreated]
+FROM [Post] AS [p]
+INNER JOIN [Category] AS [p.Category] ON [p].[CategoryId] = [p.Category].[Id]
+ORDER BY [p].[DateCreated] DESC
+2019-01-11 20:17:02.968 +02:00 [WRN] The Include operation for navigation '[pt].Tag' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-01-11 20:17:03.048 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [pt].[PostId] AS [Id0], [pt].[TagId] AS [Id], [pt.Tag].[Name]
+FROM [PostTag] AS [pt]
+INNER JOIN [Tag] AS [pt.Tag] ON [pt].[TagId] = [pt.Tag].[Id]
+WHERE [pt].[PostId] IN (3, 2, 1)
+2019-01-11 20:17:03.061 +02:00 [INF] Executed action method Blog.Web.API.Controllers.PostsController.GetPostsQuery (Dron.Blog.Web.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 2814.6556ms.
+2019-01-11 20:17:03.129 +02:00 [INF] Executing ObjectResult, writing value of type 'Blog.DAL.Entities.Blog.Query.QueryResult`1[[Blog.BLL.DTO.Blog.PostDTO, Blog.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-01-11 20:17:03.201 +02:00 [INF] Executed action Blog.Web.API.Controllers.PostsController.GetPostsQuery (Dron.Blog.Web.API) in 3378.0632ms
+2019-01-11 20:17:03.202 +02:00 [INF] Request finished in 3567.8269ms 200 application/json; charset=utf-8
+2019-01-11 20:17:12.325 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5873/dist/tryCatch.js.map  
+2019-01-11 20:17:12.327 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5873/dist/main-client.js.map  
+2019-01-11 20:17:12.380 +02:00 [INF] Request finished in 52.7237ms 200 application/json; charset=UTF-8
+2019-01-11 20:17:12.427 +02:00 [ERR] An unhandled exception has occurred while executing the request
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! missing script: start
+
+
+
+npm ERR! A complete log of this run can be found in:
+
+)) ---> System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! missing script: start
+
+
+
+npm ERR! A complete log of this run can be found in:
+
+) ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! missing script: start
+
+
+
+npm ERR! A complete log of this run can be found in:
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<>c.<Attach>b__2_0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.<WithTimeout>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.<PerformProxyRequest>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.<Invoke>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+---> (Inner Exception #0) System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! missing script: start
+
+
+
+npm ERR! A complete log of this run can be found in:
+
+) ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! missing script: start
+
+
+
+npm ERR! A complete log of this run can be found in:
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<>c.<Attach>b__2_0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+---> (Inner Exception #0) System.InvalidOperationException: The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! missing script: start
+
+
+
+npm ERR! A complete log of this run can be found in:
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()<---
+<---
+
+2019-01-11 20:17:12.835 +02:00 [INF] Request finished in 509.8939ms 500 text/html; charset=utf-8
+2019-01-11 20:17:21.610 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5873/dist/__webpack_hmr  
+2019-01-11 20:17:21.616 +02:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing action Dron.Blog.Web.API.Controllers.HomeController.Index (Dron.Blog.Web.API)
+2019-01-11 20:17:21.616 +02:00 [INF] Executing action method Dron.Blog.Web.API.Controllers.HomeController.Index (Dron.Blog.Web.API) - Validation state: "Valid"
+2019-01-11 20:17:21.616 +02:00 [INF] Executed action method Dron.Blog.Web.API.Controllers.HomeController.Index (Dron.Blog.Web.API), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0042000000000000006ms.
+2019-01-11 20:17:21.616 +02:00 [INF] Executing ViewResult, running view Index.
+2019-01-11 20:17:21.617 +02:00 [INF] Executed ViewResult - view Index executed in 0.34590000000000004ms.
+2019-01-11 20:17:21.617 +02:00 [INF] Executed action Dron.Blog.Web.API.Controllers.HomeController.Index (Dron.Blog.Web.API) in 0.7445ms
+2019-01-11 20:17:21.617 +02:00 [INF] Request finished in 7.2932ms 200 text/html; charset=utf-8
+2019-01-11 20:17:57.218 +02:00 [INF] Starting web host
+2019-01-11 20:17:57.460 +02:00 [INF] Starting web host
+2019-01-11 20:18:00.373 +02:00 [INF] User profile is available. Using 'C:\Users\luice\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-11 20:18:09.302 +02:00 [ERR] (node:22156) DeprecationWarning: Tapable.plugin is deprecated. Use new API on `.hooks` instead
+2019-01-11 20:18:10.423 +02:00 [INF] Starting @angular/cli on port 10022...
+2019-01-11 20:18:13.586 +02:00 [ERR] npm ERR! missing script: start
+
+2019-01-11 20:18:13.609 +02:00 [ERR] npm ERR! A complete log of this run can be found in:
+
+2019-01-11 20:18:15.253 +02:00 [INF] Entity Framework Core 2.1.1-rtm-30846 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-01-11 20:18:17.411 +02:00 [INF] Executed DbCommand (258ms) [Parameters=[@__Admin_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [rp].[RoleId], [rp].[PermissionId]
+FROM [RolePermission] AS [rp]
+WHERE [rp].[RoleId] = @__Admin_Id_0
+2019-01-11 20:18:18.258 +02:00 [INF] Executed DbCommand (47ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = Guid), @p5='?' (DbType = Guid), @p6='?' (DbType = Guid), @p7='?' (DbType = Guid), @p8='?' (DbType = Guid), @p9='?' (DbType = Guid), @p10='?' (DbType = Guid), @p11='?' (DbType = Guid), @p12='?' (DbType = Guid), @p13='?' (DbType = Guid), @p14='?' (DbType = Guid), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?' (DbType = Guid), @p19='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p0 AND [PermissionId] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p2 AND [PermissionId] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p4 AND [PermissionId] = @p5;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p6 AND [PermissionId] = @p7;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p8 AND [PermissionId] = @p9;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p10 AND [PermissionId] = @p11;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p12 AND [PermissionId] = @p13;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p14 AND [PermissionId] = @p15;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p16 AND [PermissionId] = @p17;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p18 AND [PermissionId] = @p19;
+SELECT @@ROWCOUNT;
+2019-01-11 20:18:18.385 +02:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CreateDate], [p].[CreateUserId], [p].[DisplayName], [p].[Name], [p].[UpdateDate], [p].[UpdateUserId]
+FROM [Permission] AS [p]
+2019-01-11 20:18:18.570 +02:00 [INF] Executed DbCommand (31ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = Guid), @p5='?' (DbType = Guid), @p6='?' (DbType = Guid), @p7='?' (DbType = Guid), @p8='?' (DbType = Guid), @p9='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Permission]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permission]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permission]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permission]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permission]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permission]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permission]
+WHERE [Id] = @p6;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permission]
+WHERE [Id] = @p7;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permission]
+WHERE [Id] = @p8;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permission]
+WHERE [Id] = @p9;
+SELECT @@ROWCOUNT;
+2019-01-11 20:18:19.004 +02:00 [INF] Executed DbCommand (85ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Guid), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2), @p6='?' (DbType = Guid), @p7='?' (DbType = Guid), @p8='?' (DbType = DateTime2), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = DateTime2), @p13='?' (DbType = Guid), @p14='?' (DbType = Guid), @p15='?' (DbType = DateTime2), @p16='?' (DbType = Guid), @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?' (DbType = DateTime2), @p20='?' (DbType = Guid), @p21='?' (DbType = Guid), @p22='?' (DbType = DateTime2), @p23='?' (DbType = Guid), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (DbType = DateTime2), @p27='?' (DbType = Guid), @p28='?' (DbType = Guid), @p29='?' (DbType = DateTime2), @p30='?' (DbType = Guid), @p31='?' (Size = 4000), @p32='?' (Size = 4000), @p33='?' (DbType = DateTime2), @p34='?' (DbType = Guid), @p35='?' (DbType = Guid), @p36='?' (DbType = DateTime2), @p37='?' (DbType = Guid), @p38='?' (Size = 4000), @p39='?' (Size = 4000), @p40='?' (DbType = DateTime2), @p41='?' (DbType = Guid), @p42='?' (DbType = Guid), @p43='?' (DbType = DateTime2), @p44='?' (DbType = Guid), @p45='?' (Size = 4000), @p46='?' (Size = 4000), @p47='?' (DbType = DateTime2), @p48='?' (DbType = Guid), @p49='?' (DbType = Guid), @p50='?' (DbType = DateTime2), @p51='?' (DbType = Guid), @p52='?' (Size = 4000), @p53='?' (Size = 4000), @p54='?' (DbType = DateTime2), @p55='?' (DbType = Guid), @p56='?' (DbType = Guid), @p57='?' (DbType = DateTime2), @p58='?' (DbType = Guid), @p59='?' (Size = 4000), @p60='?' (Size = 4000), @p61='?' (DbType = DateTime2), @p62='?' (DbType = Guid), @p63='?' (DbType = Guid), @p64='?' (DbType = DateTime2), @p65='?' (DbType = Guid), @p66='?' (Size = 4000), @p67='?' (Size = 4000), @p68='?' (DbType = DateTime2), @p69='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Permission] ([Id], [CreateDate], [CreateUserId], [DisplayName], [Name], [UpdateDate], [UpdateUserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6),
+(@p7, @p8, @p9, @p10, @p11, @p12, @p13),
+(@p14, @p15, @p16, @p17, @p18, @p19, @p20),
+(@p21, @p22, @p23, @p24, @p25, @p26, @p27),
+(@p28, @p29, @p30, @p31, @p32, @p33, @p34),
+(@p35, @p36, @p37, @p38, @p39, @p40, @p41),
+(@p42, @p43, @p44, @p45, @p46, @p47, @p48),
+(@p49, @p50, @p51, @p52, @p53, @p54, @p55),
+(@p56, @p57, @p58, @p59, @p60, @p61, @p62),
+(@p63, @p64, @p65, @p66, @p67, @p68, @p69);
+2019-01-11 20:18:19.033 +02:00 [INF] Executed DbCommand (29ms) [Parameters=[@p70='?' (DbType = Guid), @p71='?' (DbType = Guid), @p72='?' (DbType = Guid), @p73='?' (DbType = Guid), @p74='?' (DbType = Guid), @p75='?' (DbType = Guid), @p76='?' (DbType = Guid), @p77='?' (DbType = Guid), @p78='?' (DbType = Guid), @p79='?' (DbType = Guid), @p80='?' (DbType = Guid), @p81='?' (DbType = Guid), @p82='?' (DbType = Guid), @p83='?' (DbType = Guid), @p84='?' (DbType = Guid), @p85='?' (DbType = Guid), @p86='?' (DbType = Guid), @p87='?' (DbType = Guid), @p88='?' (DbType = Guid), @p89='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [RolePermission] ([RoleId], [PermissionId])
+VALUES (@p70, @p71),
+(@p72, @p73),
+(@p74, @p75),
+(@p76, @p77),
+(@p78, @p79),
+(@p80, @p81),
+(@p82, @p83),
+(@p84, @p85),
+(@p86, @p87),
+(@p88, @p89);
+2019-01-11 20:18:20.120 +02:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:5873/  0
+2019-01-11 20:18:20.120 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5873/  
+2019-01-11 20:18:20.246 +02:00 [INF] Request finished in 146.5908ms 200 
+2019-01-11 20:18:20.326 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-01-11 20:18:22.574 +02:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing action Dron.Blog.Web.API.Controllers.HomeController.Index (Dron.Blog.Web.API)
+2019-01-11 20:18:22.682 +02:00 [INF] Executing action method Dron.Blog.Web.API.Controllers.HomeController.Index (Dron.Blog.Web.API) - Validation state: "Valid"
+2019-01-11 20:18:24.047 +02:00 [INF] Executed action method Dron.Blog.Web.API.Controllers.HomeController.Index (Dron.Blog.Web.API), returned result Microsoft.AspNetCore.Mvc.ViewResult in 11.6937ms.
+2019-01-11 20:18:24.216 +02:00 [INF] Executing ViewResult, running view Index.
+2019-01-11 20:18:25.389 +02:00 [INF] Executed ViewResult - view Index executed in 1278.9681ms.
+2019-01-11 20:18:25.418 +02:00 [INF] Executed action Dron.Blog.Web.API.Controllers.HomeController.Index (Dron.Blog.Web.API) in 2837.0591ms
+2019-01-11 20:18:25.423 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5873/dist/main-client.js?v=4byEQen4P6KfMatHli2b0pjneZkrA9DPSh5jzt1AULE  
+2019-01-11 20:18:25.428 +02:00 [INF] Request finished in 5330.9686ms 200 text/html; charset=utf-8
+2019-01-11 20:18:29.343 +02:00 [INF] webpack built 59e3844d09acbe0b5ded in 20057ms
+2019-01-11 20:18:29.386 +02:00 [ERR] Hash: 59e3844d09acbe0b5ded
+Version: webpack 4.5.0
+Time: 20057ms
+Built at: 2019-1-11 20:18:29
+             Asset      Size       Chunks             Chunk Names
+    main-client.js  4.14 MiB  main-client  [emitted]  main-client
+main-client.js.map  28.5 KiB  main-client  [emitted]  main-client
+Entrypoint main-client = main-client.js main-client.js.map
+[./ClientApp/app/app.browser.module.ts] 1.45 KiB {main-client} [built]
+[./ClientApp/boot.browser.ts] 989 bytes {main-client} [built]
+[./node_modules/@angular/core/fesm5/core.js] 665 KiB {main-client} [built] [2 warnings]
+[./node_modules/@angular/platform-browser-dynamic/fesm5/platform-browser-dynamic.js] 20.2 KiB {main-client} [built]
+[./node_modules/bootstrap/dist/js/npm.js] delegated ./node_modules/bootstrap/dist/js/npm.js from dll-reference vendor_4adf5b975b06d7f766a2 42 bytes {main-client} [built]
+[./node_modules/event-source-polyfill/src/eventsource.js] 20.9 KiB {main-client} [built]
+[./node_modules/querystring-es3/index.js] 127 bytes {main-client} [built]
+[./node_modules/reflect-metadata/Reflect.js] 51.1 KiB {main-client} [built]
+[./node_modules/strip-ansi/index.js] 161 bytes {main-client} [built]
+[./node_modules/webpack-hot-middleware/client-overlay.js] (webpack)-hot-middleware/client-overlay.js 2.16 KiB {main-client} [built]
+[./node_modules/webpack-hot-middleware/client.js?path=__webpack_hmr&dynamicPublicPath=true] (webpack)-hot-middleware/client.js?path=__webpack_hmr&dynamicPublicPath=true 7.18 KiB {main-client} [built]
+[./node_modules/webpack-hot-middleware/process-update.js] (webpack)-hot-middleware/process-update.js 4.23 KiB {main-client} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 519 bytes {main-client} [built]
+   [0] multi event-source-polyfill webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot.browser.ts 52 bytes {main-client} [built]
+[./node_modules/zone.js/dist/zone.js] delegated ./node_modules/zone.js/dist/zone.js from dll-reference vendor_4adf5b975b06d7f766a2 42 bytes {main-client} [built]
+    + 275 hidden modules
+
+WARNING in ./node_modules/@angular/core/fesm5/core.js
+5556:15-36 Critical dependency: the request of a dependency is an expression
+ @ ./node_modules/@angular/core/fesm5/core.js
+ @ ./ClientApp/boot.browser.ts
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot.browser.ts
+
+WARNING in ./node_modules/@angular/core/fesm5/core.js
+5568:15-102 Critical dependency: the request of a dependency is an expression
+ @ ./node_modules/@angular/core/fesm5/core.js
+ @ ./ClientApp/boot.browser.ts
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot.browser.ts
+
+WARNING in ./node_modules/@angular/core/fesm5/core.js
+System.import() is deprecated and will be removed soon. Use import() instead.
+For more info visit https://webpack.js.org/guides/code-splitting/
+ @ ./ClientApp/boot.browser.ts 5556:15-36 4:0-47
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot.browser.ts
+
+WARNING in ./node_modules/@angular/core/fesm5/core.js
+System.import() is deprecated and will be removed soon. Use import() instead.
+For more info visit https://webpack.js.org/guides/code-splitting/
+ @ ./ClientApp/boot.browser.ts 5568:15-102 4:0-47
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot.browser.ts
+
+ERROR in ./ClientApp/app/components/blog/blog.component.ts
+Module not found: Error: Can't resolve '../../utils/extensions' in 'C:\Users\luice\source\repos\Dron.Blog\Dron.Blog.Web.API\ClientApp\app\components\blog'
+ @ ./ClientApp/app/components/blog/blog.component.ts 13:0-32
+ @ ./ClientApp/app/app.shared.module.ts
+ @ ./ClientApp/app/app.browser.module.ts
+ @ ./ClientApp/boot.browser.ts
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot.browser.ts
+
+ERROR in ./ClientApp/app/components/post-form/post-form.component.ts
+Module not found: Error: Can't resolve '../../utils/extensions' in 'C:\Users\luice\source\repos\Dron.Blog\Dron.Blog.Web.API\ClientApp\app\components\post-form'
+ @ ./ClientApp/app/components/post-form/post-form.component.ts 17:0-32
+ @ ./ClientApp/app/app.shared.module.ts
+ @ ./ClientApp/app/app.browser.module.ts
+ @ ./ClientApp/boot.browser.ts
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot.browser.ts
+
+ERROR in ./ClientApp/app/components/post-view/post-view.component.ts
+Module not found: Error: Can't resolve '../../utils/extensions' in 'C:\Users\luice\source\repos\Dron.Blog\Dron.Blog.Web.API\ClientApp\app\components\post-view'
+ @ ./ClientApp/app/components/post-view/post-view.component.ts 13:0-32
+ @ ./ClientApp/app/app.shared.module.ts
+ @ ./ClientApp/app/app.browser.module.ts
+ @ ./ClientApp/boot.browser.ts
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot.browser.ts
+
+ERROR in ./ClientApp/app/components/posts/posts.component.ts
+Module not found: Error: Can't resolve '../../utils/extensions' in 'C:\Users\luice\source\repos\Dron.Blog\Dron.Blog.Web.API\ClientApp\app\components\posts'
+ @ ./ClientApp/app/components/posts/posts.component.ts 14:0-32
+ @ ./ClientApp/app/app.shared.module.ts
+ @ ./ClientApp/app/app.browser.module.ts
+ @ ./ClientApp/boot.browser.ts
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot.browser.ts
+2019-01-11 20:18:29.919 +02:00 [INF] Request finished in 4496.9493ms 200 application/javascript; charset=UTF-8
+2019-01-11 20:18:30.514 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5873/dist/__webpack_hmr  
+2019-01-11 20:20:41.032 +02:00 [INF] Starting web host
+2019-01-11 20:20:41.317 +02:00 [INF] Starting web host
+2019-01-11 20:20:44.523 +02:00 [INF] User profile is available. Using 'C:\Users\luice\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-11 20:20:51.562 +02:00 [ERR] (node:21168) DeprecationWarning: Tapable.plugin is deprecated. Use new API on `.hooks` instead
+2019-01-11 20:20:53.107 +02:00 [INF] Starting @angular/cli on port 10387...
+2019-01-11 20:20:57.094 +02:00 [ERR] npm ERR! missing script: start
+
+2019-01-11 20:20:57.281 +02:00 [ERR] npm ERR! A complete log of this run can be found in:
+
+2019-01-11 20:20:59.496 +02:00 [INF] Entity Framework Core 2.1.1-rtm-30846 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-01-11 20:21:01.843 +02:00 [INF] Executed DbCommand (306ms) [Parameters=[@__Admin_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [rp].[RoleId], [rp].[PermissionId]
+FROM [RolePermission] AS [rp]
+WHERE [rp].[RoleId] = @__Admin_Id_0
+2019-01-11 20:21:02.783 +02:00 [INF] Executed DbCommand (52ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = Guid), @p5='?' (DbType = Guid), @p6='?' (DbType = Guid), @p7='?' (DbType = Guid), @p8='?' (DbType = Guid), @p9='?' (DbType = Guid), @p10='?' (DbType = Guid), @p11='?' (DbType = Guid), @p12='?' (DbType = Guid), @p13='?' (DbType = Guid), @p14='?' (DbType = Guid), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?' (DbType = Guid), @p19='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p0 AND [PermissionId] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p2 AND [PermissionId] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p4 AND [PermissionId] = @p5;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p6 AND [PermissionId] = @p7;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p8 AND [PermissionId] = @p9;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p10 AND [PermissionId] = @p11;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p12 AND [PermissionId] = @p13;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p14 AND [PermissionId] = @p15;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p16 AND [PermissionId] = @p17;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p18 AND [PermissionId] = @p19;
+SELECT @@ROWCOUNT;
+2019-01-11 20:21:02.988 +02:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CreateDate], [p].[CreateUserId], [p].[DisplayName], [p].[Name], [p].[UpdateDate], [p].[UpdateUserId]
+FROM [Permission] AS [p]
+2019-01-11 20:21:03.249 +02:00 [INF] Executed DbCommand (79ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = Guid), @p5='?' (DbType = Guid), @p6='?' (DbType = Guid), @p7='?' (DbType = Guid), @p8='?' (DbType = Guid), @p9='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Permission]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permission]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permission]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permission]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permission]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permission]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permission]
+WHERE [Id] = @p6;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permission]
+WHERE [Id] = @p7;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permission]
+WHERE [Id] = @p8;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permission]
+WHERE [Id] = @p9;
+SELECT @@ROWCOUNT;
+2019-01-11 20:21:03.431 +02:00 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Guid), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2), @p6='?' (DbType = Guid), @p7='?' (DbType = Guid), @p8='?' (DbType = DateTime2), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = DateTime2), @p13='?' (DbType = Guid), @p14='?' (DbType = Guid), @p15='?' (DbType = DateTime2), @p16='?' (DbType = Guid), @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?' (DbType = DateTime2), @p20='?' (DbType = Guid), @p21='?' (DbType = Guid), @p22='?' (DbType = DateTime2), @p23='?' (DbType = Guid), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (DbType = DateTime2), @p27='?' (DbType = Guid), @p28='?' (DbType = Guid), @p29='?' (DbType = DateTime2), @p30='?' (DbType = Guid), @p31='?' (Size = 4000), @p32='?' (Size = 4000), @p33='?' (DbType = DateTime2), @p34='?' (DbType = Guid), @p35='?' (DbType = Guid), @p36='?' (DbType = DateTime2), @p37='?' (DbType = Guid), @p38='?' (Size = 4000), @p39='?' (Size = 4000), @p40='?' (DbType = DateTime2), @p41='?' (DbType = Guid), @p42='?' (DbType = Guid), @p43='?' (DbType = DateTime2), @p44='?' (DbType = Guid), @p45='?' (Size = 4000), @p46='?' (Size = 4000), @p47='?' (DbType = DateTime2), @p48='?' (DbType = Guid), @p49='?' (DbType = Guid), @p50='?' (DbType = DateTime2), @p51='?' (DbType = Guid), @p52='?' (Size = 4000), @p53='?' (Size = 4000), @p54='?' (DbType = DateTime2), @p55='?' (DbType = Guid), @p56='?' (DbType = Guid), @p57='?' (DbType = DateTime2), @p58='?' (DbType = Guid), @p59='?' (Size = 4000), @p60='?' (Size = 4000), @p61='?' (DbType = DateTime2), @p62='?' (DbType = Guid), @p63='?' (DbType = Guid), @p64='?' (DbType = DateTime2), @p65='?' (DbType = Guid), @p66='?' (Size = 4000), @p67='?' (Size = 4000), @p68='?' (DbType = DateTime2), @p69='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Permission] ([Id], [CreateDate], [CreateUserId], [DisplayName], [Name], [UpdateDate], [UpdateUserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6),
+(@p7, @p8, @p9, @p10, @p11, @p12, @p13),
+(@p14, @p15, @p16, @p17, @p18, @p19, @p20),
+(@p21, @p22, @p23, @p24, @p25, @p26, @p27),
+(@p28, @p29, @p30, @p31, @p32, @p33, @p34),
+(@p35, @p36, @p37, @p38, @p39, @p40, @p41),
+(@p42, @p43, @p44, @p45, @p46, @p47, @p48),
+(@p49, @p50, @p51, @p52, @p53, @p54, @p55),
+(@p56, @p57, @p58, @p59, @p60, @p61, @p62),
+(@p63, @p64, @p65, @p66, @p67, @p68, @p69);
+2019-01-11 20:21:03.438 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@p70='?' (DbType = Guid), @p71='?' (DbType = Guid), @p72='?' (DbType = Guid), @p73='?' (DbType = Guid), @p74='?' (DbType = Guid), @p75='?' (DbType = Guid), @p76='?' (DbType = Guid), @p77='?' (DbType = Guid), @p78='?' (DbType = Guid), @p79='?' (DbType = Guid), @p80='?' (DbType = Guid), @p81='?' (DbType = Guid), @p82='?' (DbType = Guid), @p83='?' (DbType = Guid), @p84='?' (DbType = Guid), @p85='?' (DbType = Guid), @p86='?' (DbType = Guid), @p87='?' (DbType = Guid), @p88='?' (DbType = Guid), @p89='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [RolePermission] ([RoleId], [PermissionId])
+VALUES (@p70, @p71),
+(@p72, @p73),
+(@p74, @p75),
+(@p76, @p77),
+(@p78, @p79),
+(@p80, @p81),
+(@p82, @p83),
+(@p84, @p85),
+(@p86, @p87),
+(@p88, @p89);
+2019-01-11 20:21:05.077 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5873/  
+2019-01-11 20:21:05.077 +02:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:5873/  0
+2019-01-11 20:21:05.242 +02:00 [INF] Request finished in 178.1063ms 200 
+2019-01-11 20:21:05.457 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-01-11 20:21:06.920 +02:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing action Dron.Blog.Web.API.Controllers.HomeController.Index (Dron.Blog.Web.API)
+2019-01-11 20:21:07.071 +02:00 [INF] Executing action method Dron.Blog.Web.API.Controllers.HomeController.Index (Dron.Blog.Web.API) - Validation state: "Valid"
+2019-01-11 20:21:07.093 +02:00 [INF] Executed action method Dron.Blog.Web.API.Controllers.HomeController.Index (Dron.Blog.Web.API), returned result Microsoft.AspNetCore.Mvc.ViewResult in 13.971400000000001ms.
+2019-01-11 20:21:07.280 +02:00 [INF] Executing ViewResult, running view Index.
+2019-01-11 20:21:08.176 +02:00 [INF] Executed ViewResult - view Index executed in 1010.0105000000001ms.
+2019-01-11 20:21:08.201 +02:00 [INF] Executed action Dron.Blog.Web.API.Controllers.HomeController.Index (Dron.Blog.Web.API) in 1272.7418ms
+2019-01-11 20:21:08.209 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5873/dist/main-client.js?v=OCJDj2490Gw68ncz64hWFw5C08ljULHDTf0sDyLxzqg  
+2019-01-11 20:21:08.211 +02:00 [INF] Request finished in 3159.1125ms 200 text/html; charset=utf-8
+2019-01-11 20:21:12.602 +02:00 [INF] webpack built 0c8a246498050d9c511d in 21091ms
+2019-01-11 20:21:12.644 +02:00 [ERR] Hash: 0c8a246498050d9c511d
+Version: webpack 4.5.0
+Time: 21091ms
+Built at: 2019-1-11 20:21:12
+             Asset      Size       Chunks             Chunk Names
+    main-client.js  4.14 MiB  main-client  [emitted]  main-client
+main-client.js.map  28.5 KiB  main-client  [emitted]  main-client
+Entrypoint main-client = main-client.js main-client.js.map
+[./ClientApp/app/app.browser.module.ts] 1.45 KiB {main-client} [built]
+[./ClientApp/boot.browser.ts] 989 bytes {main-client} [built]
+[./node_modules/@angular/core/fesm5/core.js] 665 KiB {main-client} [built] [2 warnings]
+[./node_modules/@angular/platform-browser-dynamic/fesm5/platform-browser-dynamic.js] 20.2 KiB {main-client} [built]
+[./node_modules/bootstrap/dist/js/npm.js] delegated ./node_modules/bootstrap/dist/js/npm.js from dll-reference vendor_4adf5b975b06d7f766a2 42 bytes {main-client} [built]
+[./node_modules/event-source-polyfill/src/eventsource.js] 20.9 KiB {main-client} [built]
+[./node_modules/querystring-es3/index.js] 127 bytes {main-client} [built]
+[./node_modules/reflect-metadata/Reflect.js] 51.1 KiB {main-client} [built]
+[./node_modules/strip-ansi/index.js] 161 bytes {main-client} [built]
+[./node_modules/webpack-hot-middleware/client-overlay.js] (webpack)-hot-middleware/client-overlay.js 2.16 KiB {main-client} [built]
+[./node_modules/webpack-hot-middleware/client.js?path=__webpack_hmr&dynamicPublicPath=true] (webpack)-hot-middleware/client.js?path=__webpack_hmr&dynamicPublicPath=true 7.18 KiB {main-client} [built]
+[./node_modules/webpack-hot-middleware/process-update.js] (webpack)-hot-middleware/process-update.js 4.23 KiB {main-client} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 519 bytes {main-client} [built]
+   [0] multi event-source-polyfill webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot.browser.ts 52 bytes {main-client} [built]
+[./node_modules/zone.js/dist/zone.js] delegated ./node_modules/zone.js/dist/zone.js from dll-reference vendor_4adf5b975b06d7f766a2 42 bytes {main-client} [built]
+    + 275 hidden modules
+
+WARNING in ./node_modules/@angular/core/fesm5/core.js
+5556:15-36 Critical dependency: the request of a dependency is an expression
+ @ ./node_modules/@angular/core/fesm5/core.js
+ @ ./ClientApp/boot.browser.ts
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot.browser.ts
+
+WARNING in ./node_modules/@angular/core/fesm5/core.js
+5568:15-102 Critical dependency: the request of a dependency is an expression
+ @ ./node_modules/@angular/core/fesm5/core.js
+ @ ./ClientApp/boot.browser.ts
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot.browser.ts
+
+WARNING in ./node_modules/@angular/core/fesm5/core.js
+System.import() is deprecated and will be removed soon. Use import() instead.
+For more info visit https://webpack.js.org/guides/code-splitting/
+ @ ./ClientApp/boot.browser.ts 5556:15-36 4:0-47
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot.browser.ts
+
+WARNING in ./node_modules/@angular/core/fesm5/core.js
+System.import() is deprecated and will be removed soon. Use import() instead.
+For more info visit https://webpack.js.org/guides/code-splitting/
+ @ ./ClientApp/boot.browser.ts 5568:15-102 4:0-47
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot.browser.ts
+2019-01-11 20:21:13.193 +02:00 [INF] Request finished in 4983.853ms 200 application/javascript; charset=UTF-8
+2019-01-11 20:21:15.555 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5873/api/posts/query?search=&sortBy=DateCreated&isSortAscending=false&page=1&pageSize=5  
+2019-01-11 20:21:15.568 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5873/dist/__webpack_hmr  
+2019-01-11 20:21:15.658 +02:00 [INF] Route matched with {action = "GetPostsQuery", controller = "Posts"}. Executing action Blog.Web.API.Controllers.PostsController.GetPostsQuery (Dron.Blog.Web.API)
+2019-01-11 20:21:15.881 +02:00 [INF] Executing action method Blog.Web.API.Controllers.PostsController.GetPostsQuery (Dron.Blog.Web.API) with arguments (["Blog.BLL.DTO.Blog.Query.PostQueryDTO"]) - Validation state: "Valid"
+2019-01-11 20:21:15.985 +02:00 [INF] Entity Framework Core 2.1.1-rtm-30846 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-01-11 20:21:16.466 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Content], [p].[DateCreated], [p].[DateLastUpdated], [p].[IsActive], [p].[ShortContent], [p].[Title], [p.Category].[Id], [p.Category].[DateCreated], [p.Category].[DateLastUpdated], [p.Category].[IsActive], [p.Category].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Category] AS [p.Category] ON [p].[CategoryId] = [p.Category].[Id]
+ORDER BY [p].[Id]
+2019-01-11 20:21:16.555 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p.Tags].[PostId], [p.Tags].[TagId], [p.Tag].[Id], [p.Tag].[DateCreated], [p.Tag].[DateLastUpdated], [p.Tag].[IsActive], [p.Tag].[Name]
+FROM [PostTag] AS [p.Tags]
+INNER JOIN [Tag] AS [p.Tag] ON [p.Tags].[TagId] = [p.Tag].[Id]
+INNER JOIN (
+    SELECT DISTINCT [p0].[Id]
+    FROM [Post] AS [p0]
+    INNER JOIN [Category] AS [p.Category0] ON [p0].[CategoryId] = [p.Category0].[Id]
+) AS [t] ON [p.Tags].[PostId] = [t].[Id]
+ORDER BY [t].[Id]
+2019-01-11 20:21:16.582 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Content], [p].[DateCreated], [p].[DateLastUpdated], [p].[IsActive], [p].[ShortContent], [p].[Title], [p.Category].[Id], [p.Category].[DateCreated], [p.Category].[DateLastUpdated], [p.Category].[IsActive], [p.Category].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Category] AS [p.Category] ON [p].[CategoryId] = [p.Category].[Id]
+ORDER BY [p].[Id]
+2019-01-11 20:21:16.583 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p.Tags].[PostId], [p.Tags].[TagId], [p.Tag].[Id], [p.Tag].[DateCreated], [p.Tag].[DateLastUpdated], [p.Tag].[IsActive], [p.Tag].[Name]
+FROM [PostTag] AS [p.Tags]
+INNER JOIN [Tag] AS [p.Tag] ON [p.Tags].[TagId] = [p.Tag].[Id]
+INNER JOIN (
+    SELECT DISTINCT [p0].[Id]
+    FROM [Post] AS [p0]
+    INNER JOIN [Category] AS [p.Category0] ON [p0].[CategoryId] = [p.Category0].[Id]
+) AS [t] ON [p.Tags].[PostId] = [t].[Id]
+ORDER BY [t].[Id]
+2019-01-11 20:21:16.602 +02:00 [WRN] The Include operation for navigation '[p].Category' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-01-11 20:21:16.605 +02:00 [WRN] The Include operation for navigation '[p].Tags.Tag' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-01-11 20:21:16.749 +02:00 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Post] AS [p]
+2019-01-11 20:21:16.772 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Content], [p].[DateCreated], [p].[DateLastUpdated], [p].[IsActive], [p].[ShortContent], [p].[Title], [p.Category].[Id], [p.Category].[DateCreated], [p.Category].[DateLastUpdated], [p.Category].[IsActive], [p.Category].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Category] AS [p.Category] ON [p].[CategoryId] = [p.Category].[Id]
+ORDER BY [p].[Id]
+2019-01-11 20:21:16.773 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p.Tags].[PostId], [p.Tags].[TagId], [p.Tag].[Id], [p.Tag].[DateCreated], [p.Tag].[DateLastUpdated], [p.Tag].[IsActive], [p.Tag].[Name]
+FROM [PostTag] AS [p.Tags]
+INNER JOIN [Tag] AS [p.Tag] ON [p.Tags].[TagId] = [p.Tag].[Id]
+INNER JOIN (
+    SELECT DISTINCT [p0].[Id]
+    FROM [Post] AS [p0]
+    INNER JOIN [Category] AS [p.Category0] ON [p0].[CategoryId] = [p.Category0].[Id]
+) AS [t] ON [p.Tags].[PostId] = [t].[Id]
+ORDER BY [t].[Id]
+2019-01-11 20:21:16.779 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Content], [p].[DateCreated], [p].[DateLastUpdated], [p].[IsActive], [p].[ShortContent], [p].[Title], [p.Category].[Id], [p.Category].[DateCreated], [p.Category].[DateLastUpdated], [p.Category].[IsActive], [p.Category].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Category] AS [p.Category] ON [p].[CategoryId] = [p.Category].[Id]
+ORDER BY [p].[Id]
+2019-01-11 20:21:16.782 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p.Tags].[PostId], [p.Tags].[TagId], [p.Tag].[Id], [p.Tag].[DateCreated], [p.Tag].[DateLastUpdated], [p.Tag].[IsActive], [p.Tag].[Name]
+FROM [PostTag] AS [p.Tags]
+INNER JOIN [Tag] AS [p.Tag] ON [p.Tags].[TagId] = [p.Tag].[Id]
+INNER JOIN (
+    SELECT DISTINCT [p0].[Id]
+    FROM [Post] AS [p0]
+    INNER JOIN [Category] AS [p.Category0] ON [p0].[CategoryId] = [p.Category0].[Id]
+) AS [t] ON [p.Tags].[PostId] = [t].[Id]
+ORDER BY [t].[Id]
+2019-01-11 20:21:16.901 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Content], [p].[DateCreated], [p].[DateLastUpdated], [p].[IsActive], [p].[ShortContent], [p].[Title], [p.Category].[Id], [p.Category].[DateCreated], [p.Category].[DateLastUpdated], [p.Category].[IsActive], [p.Category].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Category] AS [p.Category] ON [p].[CategoryId] = [p.Category].[Id]
+ORDER BY [p].[DateCreated] DESC, [p].[Id]
+2019-01-11 20:21:16.932 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p.Tags].[PostId], [p.Tags].[TagId], [p.Tag].[Id], [p.Tag].[DateCreated], [p.Tag].[DateLastUpdated], [p.Tag].[IsActive], [p.Tag].[Name]
+FROM [PostTag] AS [p.Tags]
+INNER JOIN [Tag] AS [p.Tag] ON [p.Tags].[TagId] = [p.Tag].[Id]
+INNER JOIN (
+    SELECT DISTINCT [p0].[Id], [p0].[DateCreated]
+    FROM [Post] AS [p0]
+    INNER JOIN [Category] AS [p.Category0] ON [p0].[CategoryId] = [p.Category0].[Id]
+) AS [t] ON [p.Tags].[PostId] = [t].[Id]
+ORDER BY [t].[DateCreated] DESC, [t].[Id]
+2019-01-11 20:21:16.977 +02:00 [WRN] The Include operation for navigation '[p].Category' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-01-11 20:21:16.978 +02:00 [WRN] The Include operation for navigation '[p].Tags.Tag' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-01-11 20:21:17.089 +02:00 [INF] Executed DbCommand (37ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_0) [p].[Id], [p].[Title], [p].[ShortContent], [p.Category].[Name], [p].[DateCreated]
+FROM [Post] AS [p]
+INNER JOIN [Category] AS [p.Category] ON [p].[CategoryId] = [p.Category].[Id]
+ORDER BY [p].[DateCreated] DESC
+2019-01-11 20:21:17.185 +02:00 [WRN] The Include operation for navigation '[pt].Tag' is unnecessary and was ignored because the navigation is not reachable in the final query results. See https://go.microsoft.com/fwlink/?linkid=850303 for more information.
+2019-01-11 20:21:17.252 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [pt].[PostId] AS [Id0], [pt].[TagId] AS [Id], [pt.Tag].[Name]
+FROM [PostTag] AS [pt]
+INNER JOIN [Tag] AS [pt.Tag] ON [pt].[TagId] = [pt.Tag].[Id]
+WHERE [pt].[PostId] IN (3, 2, 1)
+2019-01-11 20:21:17.275 +02:00 [INF] Executed action method Blog.Web.API.Controllers.PostsController.GetPostsQuery (Dron.Blog.Web.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1380.0834ms.
+2019-01-11 20:21:17.320 +02:00 [INF] Executing ObjectResult, writing value of type 'Blog.DAL.Entities.Blog.Query.QueryResult`1[[Blog.BLL.DTO.Blog.PostDTO, Blog.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-01-11 20:21:17.382 +02:00 [INF] Executed action Blog.Web.API.Controllers.PostsController.GetPostsQuery (Dron.Blog.Web.API) in 1723.9912000000002ms
+2019-01-11 20:21:17.383 +02:00 [INF] Request finished in 1828.4136ms 200 application/json; charset=utf-8
+2019-01-11 20:21:25.303 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5873/api/posts/query?search=&sortBy=DateCreated&isSortAscending=false&page=1&pageSize=5  
+2019-01-11 20:21:25.307 +02:00 [INF] Route matched with {action = "GetPostsQuery", controller = "Posts"}. Executing action Blog.Web.API.Controllers.PostsController.GetPostsQuery (Dron.Blog.Web.API)
+2019-01-11 20:21:25.311 +02:00 [INF] Executing action method Blog.Web.API.Controllers.PostsController.GetPostsQuery (Dron.Blog.Web.API) with arguments (["Blog.BLL.DTO.Blog.Query.PostQueryDTO"]) - Validation state: "Valid"
+2019-01-11 20:21:25.313 +02:00 [INF] Entity Framework Core 2.1.1-rtm-30846 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-01-11 20:21:25.342 +02:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Content], [p].[DateCreated], [p].[DateLastUpdated], [p].[IsActive], [p].[ShortContent], [p].[Title], [p.Category].[Id], [p.Category].[DateCreated], [p.Category].[DateLastUpdated], [p.Category].[IsActive], [p.Category].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Category] AS [p.Category] ON [p].[CategoryId] = [p.Category].[Id]
+ORDER BY [p].[Id]
+2019-01-11 20:21:25.346 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p.Tags].[PostId], [p.Tags].[TagId], [p.Tag].[Id], [p.Tag].[DateCreated], [p.Tag].[DateLastUpdated], [p.Tag].[IsActive], [p.Tag].[Name]
+FROM [PostTag] AS [p.Tags]
+INNER JOIN [Tag] AS [p.Tag] ON [p.Tags].[TagId] = [p.Tag].[Id]
+INNER JOIN (
+    SELECT DISTINCT [p0].[Id]
+    FROM [Post] AS [p0]
+    INNER JOIN [Category] AS [p.Category0] ON [p0].[CategoryId] = [p.Category0].[Id]
+) AS [t] ON [p.Tags].[PostId] = [t].[Id]
+ORDER BY [t].[Id]
+2019-01-11 20:21:25.347 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Content], [p].[DateCreated], [p].[DateLastUpdated], [p].[IsActive], [p].[ShortContent], [p].[Title], [p.Category].[Id], [p.Category].[DateCreated], [p.Category].[DateLastUpdated], [p.Category].[IsActive], [p.Category].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Category] AS [p.Category] ON [p].[CategoryId] = [p.Category].[Id]
+ORDER BY [p].[Id]
+2019-01-11 20:21:25.348 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p.Tags].[PostId], [p.Tags].[TagId], [p.Tag].[Id], [p.Tag].[DateCreated], [p.Tag].[DateLastUpdated], [p.Tag].[IsActive], [p.Tag].[Name]
+FROM [PostTag] AS [p.Tags]
+INNER JOIN [Tag] AS [p.Tag] ON [p.Tags].[TagId] = [p.Tag].[Id]
+INNER JOIN (
+    SELECT DISTINCT [p0].[Id]
+    FROM [Post] AS [p0]
+    INNER JOIN [Category] AS [p.Category0] ON [p0].[CategoryId] = [p.Category0].[Id]
+) AS [t] ON [p.Tags].[PostId] = [t].[Id]
+ORDER BY [t].[Id]
+2019-01-11 20:21:25.354 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Post] AS [p]
+2019-01-11 20:21:25.368 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Content], [p].[DateCreated], [p].[DateLastUpdated], [p].[IsActive], [p].[ShortContent], [p].[Title], [p.Category].[Id], [p.Category].[DateCreated], [p.Category].[DateLastUpdated], [p.Category].[IsActive], [p.Category].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Category] AS [p.Category] ON [p].[CategoryId] = [p.Category].[Id]
+ORDER BY [p].[Id]
+2019-01-11 20:21:25.368 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p.Tags].[PostId], [p.Tags].[TagId], [p.Tag].[Id], [p.Tag].[DateCreated], [p.Tag].[DateLastUpdated], [p.Tag].[IsActive], [p.Tag].[Name]
+FROM [PostTag] AS [p.Tags]
+INNER JOIN [Tag] AS [p.Tag] ON [p.Tags].[TagId] = [p.Tag].[Id]
+INNER JOIN (
+    SELECT DISTINCT [p0].[Id]
+    FROM [Post] AS [p0]
+    INNER JOIN [Category] AS [p.Category0] ON [p0].[CategoryId] = [p.Category0].[Id]
+) AS [t] ON [p.Tags].[PostId] = [t].[Id]
+ORDER BY [t].[Id]
+2019-01-11 20:21:25.369 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Content], [p].[DateCreated], [p].[DateLastUpdated], [p].[IsActive], [p].[ShortContent], [p].[Title], [p.Category].[Id], [p.Category].[DateCreated], [p.Category].[DateLastUpdated], [p.Category].[IsActive], [p.Category].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Category] AS [p.Category] ON [p].[CategoryId] = [p.Category].[Id]
+ORDER BY [p].[Id]
+2019-01-11 20:21:25.370 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p.Tags].[PostId], [p.Tags].[TagId], [p.Tag].[Id], [p.Tag].[DateCreated], [p.Tag].[DateLastUpdated], [p.Tag].[IsActive], [p.Tag].[Name]
+FROM [PostTag] AS [p.Tags]
+INNER JOIN [Tag] AS [p.Tag] ON [p.Tags].[TagId] = [p.Tag].[Id]
+INNER JOIN (
+    SELECT DISTINCT [p0].[Id]
+    FROM [Post] AS [p0]
+    INNER JOIN [Category] AS [p.Category0] ON [p0].[CategoryId] = [p.Category0].[Id]
+) AS [t] ON [p.Tags].[PostId] = [t].[Id]
+ORDER BY [t].[Id]
+2019-01-11 20:21:25.374 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Content], [p].[DateCreated], [p].[DateLastUpdated], [p].[IsActive], [p].[ShortContent], [p].[Title], [p.Category].[Id], [p.Category].[DateCreated], [p.Category].[DateLastUpdated], [p.Category].[IsActive], [p.Category].[Name]
+FROM [Post] AS [p]
+INNER JOIN [Category] AS [p.Category] ON [p].[CategoryId] = [p.Category].[Id]
+ORDER BY [p].[DateCreated] DESC, [p].[Id]
+2019-01-11 20:21:25.380 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p.Tags].[PostId], [p.Tags].[TagId], [p.Tag].[Id], [p.Tag].[DateCreated], [p.Tag].[DateLastUpdated], [p.Tag].[IsActive], [p.Tag].[Name]
+FROM [PostTag] AS [p.Tags]
+INNER JOIN [Tag] AS [p.Tag] ON [p.Tags].[TagId] = [p.Tag].[Id]
+INNER JOIN (
+    SELECT DISTINCT [p0].[Id], [p0].[DateCreated]
+    FROM [Post] AS [p0]
+    INNER JOIN [Category] AS [p.Category0] ON [p0].[CategoryId] = [p.Category0].[Id]
+) AS [t] ON [p.Tags].[PostId] = [t].[Id]
+ORDER BY [t].[DateCreated] DESC, [t].[Id]
+2019-01-11 20:21:25.387 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_0) [p].[Id], [p].[Title], [p].[ShortContent], [p.Category].[Name], [p].[DateCreated]
+FROM [Post] AS [p]
+INNER JOIN [Category] AS [p.Category] ON [p].[CategoryId] = [p.Category].[Id]
+ORDER BY [p].[DateCreated] DESC
+2019-01-11 20:21:25.392 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [pt].[PostId] AS [Id0], [pt].[TagId] AS [Id], [pt.Tag].[Name]
+FROM [PostTag] AS [pt]
+INNER JOIN [Tag] AS [pt.Tag] ON [pt].[TagId] = [pt.Tag].[Id]
+WHERE [pt].[PostId] IN (3, 2, 1)
+2019-01-11 20:21:25.392 +02:00 [INF] Executed action method Blog.Web.API.Controllers.PostsController.GetPostsQuery (Dron.Blog.Web.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 80.964700000000008ms.
+2019-01-11 20:21:25.395 +02:00 [INF] Executing ObjectResult, writing value of type 'Blog.DAL.Entities.Blog.Query.QueryResult`1[[Blog.BLL.DTO.Blog.PostDTO, Blog.BLL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-01-11 20:21:25.401 +02:00 [INF] Executed action Blog.Web.API.Controllers.PostsController.GetPostsQuery (Dron.Blog.Web.API) in 93.474ms
+2019-01-11 20:21:25.402 +02:00 [INF] Request finished in 98.5122ms 200 application/json; charset=utf-8
+2019-01-11 20:21:58.899 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5873/test  
+2019-01-11 20:21:58.908 +02:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing action Dron.Blog.Web.API.Controllers.HomeController.Index (Dron.Blog.Web.API)
+2019-01-11 20:21:58.908 +02:00 [INF] Executing action method Dron.Blog.Web.API.Controllers.HomeController.Index (Dron.Blog.Web.API) - Validation state: "Valid"
+2019-01-11 20:21:58.908 +02:00 [INF] Executed action method Dron.Blog.Web.API.Controllers.HomeController.Index (Dron.Blog.Web.API), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0679ms.
+2019-01-11 20:21:58.913 +02:00 [INF] Executing ViewResult, running view Index.
+2019-01-11 20:21:59.090 +02:00 [INF] Executed ViewResult - view Index executed in 180.848ms.
+2019-01-11 20:21:59.090 +02:00 [INF] Executed action Dron.Blog.Web.API.Controllers.HomeController.Index (Dron.Blog.Web.API) in 182.2152ms
+2019-01-11 20:21:59.094 +02:00 [INF] Request finished in 195.0692ms 200 text/html; charset=utf-8
+2019-01-11 20:21:59.151 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5873/dist/main-client.js?v=Y04gq1AX-R60TDnvt4_e9LN8YZiBW7OjIzKEkMzOEq0  
+2019-01-11 20:21:59.334 +02:00 [INF] Request finished in 183.1308ms 200 application/javascript; charset=UTF-8
+2019-01-11 20:22:00.504 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5873/dist/__webpack_hmr  
+2019-01-11 20:22:00.631 +02:00 [INF] Request finished in 45063.0618ms 200 text/event-stream; charset=utf-8
+2019-01-11 20:23:31.187 +02:00 [INF] Starting web host
+2019-01-11 20:23:31.315 +02:00 [INF] Starting web host
+2019-01-11 20:23:32.166 +02:00 [INF] User profile is available. Using 'C:\Users\luice\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-11 20:23:36.825 +02:00 [ERR] (node:21348) DeprecationWarning: Tapable.plugin is deprecated. Use new API on `.hooks` instead
+2019-01-11 20:23:37.647 +02:00 [INF] Starting @angular/cli on port 10772...
+2019-01-11 20:23:41.045 +02:00 [ERR] npm ERR! missing script: start
+
+2019-01-11 20:23:41.166 +02:00 [INF] Entity Framework Core 2.1.1-rtm-30846 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-01-11 20:23:43.219 +02:00 [INF] Executed DbCommand (397ms) [Parameters=[@__Admin_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [rp].[RoleId], [rp].[PermissionId]
+FROM [RolePermission] AS [rp]
+WHERE [rp].[RoleId] = @__Admin_Id_0
+2019-01-11 20:23:44.560 +02:00 [INF] Executed DbCommand (21ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = Guid), @p5='?' (DbType = Guid), @p6='?' (DbType = Guid), @p7='?' (DbType = Guid), @p8='?' (DbType = Guid), @p9='?' (DbType = Guid), @p10='?' (DbType = Guid), @p11='?' (DbType = Guid), @p12='?' (DbType = Guid), @p13='?' (DbType = Guid), @p14='?' (DbType = Guid), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?' (DbType = Guid), @p19='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p0 AND [PermissionId] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p2 AND [PermissionId] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p4 AND [PermissionId] = @p5;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p6 AND [PermissionId] = @p7;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p8 AND [PermissionId] = @p9;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p10 AND [PermissionId] = @p11;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p12 AND [PermissionId] = @p13;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p14 AND [PermissionId] = @p15;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p16 AND [PermissionId] = @p17;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [RolePermission]
+WHERE [RoleId] = @p18 AND [PermissionId] = @p19;
+SELECT @@ROWCOUNT;
+2019-01-11 20:23:44.737 +02:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CreateDate], [p].[CreateUserId], [p].[DisplayName], [p].[Name], [p].[UpdateDate], [p].[UpdateUserId]
+FROM [Permission] AS [p]
+2019-01-11 20:23:44.990 +02:00 [INF] Executed DbCommand (64ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = Guid), @p5='?' (DbType = Guid), @p6='?' (DbType = Guid), @p7='?' (DbType = Guid), @p8='?' (DbType = Guid), @p9='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Permission]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permission]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permission]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permission]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permission]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permission]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permission]
+WHERE [Id] = @p6;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permission]
+WHERE [Id] = @p7;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permission]
+WHERE [Id] = @p8;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permission]
+WHERE [Id] = @p9;
+SELECT @@ROWCOUNT;
+2019-01-11 20:23:45.234 +02:00 [INF] Executed DbCommand (27ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Guid), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2), @p6='?' (DbType = Guid), @p7='?' (DbType = Guid), @p8='?' (DbType = DateTime2), @p9='?' (DbType = Guid), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = DateTime2), @p13='?' (DbType = Guid), @p14='?' (DbType = Guid), @p15='?' (DbType = DateTime2), @p16='?' (DbType = Guid), @p17='?' (Size = 4000), @p18='?' (Size = 4000), @p19='?' (DbType = DateTime2), @p20='?' (DbType = Guid), @p21='?' (DbType = Guid), @p22='?' (DbType = DateTime2), @p23='?' (DbType = Guid), @p24='?' (Size = 4000), @p25='?' (Size = 4000), @p26='?' (DbType = DateTime2), @p27='?' (DbType = Guid), @p28='?' (DbType = Guid), @p29='?' (DbType = DateTime2), @p30='?' (DbType = Guid), @p31='?' (Size = 4000), @p32='?' (Size = 4000), @p33='?' (DbType = DateTime2), @p34='?' (DbType = Guid), @p35='?' (DbType = Guid), @p36='?' (DbType = DateTime2), @p37='?' (DbType = Guid), @p38='?' (Size = 4000), @p39='?' (Size = 4000), @p40='?' (DbType = DateTime2), @p41='?' (DbType = Guid), @p42='?' (DbType = Guid), @p43='?' (DbType = DateTime2), @p44='?' (DbType = Guid), @p45='?' (Size = 4000), @p46='?' (Size = 4000), @p47='?' (DbType = DateTime2), @p48='?' (DbType = Guid), @p49='?' (DbType = Guid), @p50='?' (DbType = DateTime2), @p51='?' (DbType = Guid), @p52='?' (Size = 4000), @p53='?' (Size = 4000), @p54='?' (DbType = DateTime2), @p55='?' (DbType = Guid), @p56='?' (DbType = Guid), @p57='?' (DbType = DateTime2), @p58='?' (DbType = Guid), @p59='?' (Size = 4000), @p60='?' (Size = 4000), @p61='?' (DbType = DateTime2), @p62='?' (DbType = Guid), @p63='?' (DbType = Guid), @p64='?' (DbType = DateTime2), @p65='?' (DbType = Guid), @p66='?' (Size = 4000), @p67='?' (Size = 4000), @p68='?' (DbType = DateTime2), @p69='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Permission] ([Id], [CreateDate], [CreateUserId], [DisplayName], [Name], [UpdateDate], [UpdateUserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6),
+(@p7, @p8, @p9, @p10, @p11, @p12, @p13),
+(@p14, @p15, @p16, @p17, @p18, @p19, @p20),
+(@p21, @p22, @p23, @p24, @p25, @p26, @p27),
+(@p28, @p29, @p30, @p31, @p32, @p33, @p34),
+(@p35, @p36, @p37, @p38, @p39, @p40, @p41),
+(@p42, @p43, @p44, @p45, @p46, @p47, @p48),
+(@p49, @p50, @p51, @p52, @p53, @p54, @p55),
+(@p56, @p57, @p58, @p59, @p60, @p61, @p62),
+(@p63, @p64, @p65, @p66, @p67, @p68, @p69);
+2019-01-11 20:23:45.268 +02:00 [INF] Executed DbCommand (23ms) [Parameters=[@p70='?' (DbType = Guid), @p71='?' (DbType = Guid), @p72='?' (DbType = Guid), @p73='?' (DbType = Guid), @p74='?' (DbType = Guid), @p75='?' (DbType = Guid), @p76='?' (DbType = Guid), @p77='?' (DbType = Guid), @p78='?' (DbType = Guid), @p79='?' (DbType = Guid), @p80='?' (DbType = Guid), @p81='?' (DbType = Guid), @p82='?' (DbType = Guid), @p83='?' (DbType = Guid), @p84='?' (DbType = Guid), @p85='?' (DbType = Guid), @p86='?' (DbType = Guid), @p87='?' (DbType = Guid), @p88='?' (DbType = Guid), @p89='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [RolePermission] ([RoleId], [PermissionId])
+VALUES (@p70, @p71),
+(@p72, @p73),
+(@p74, @p75),
+(@p76, @p77),
+(@p78, @p79),
+(@p80, @p81),
+(@p82, @p83),
+(@p84, @p85),
+(@p86, @p87),
+(@p88, @p89);
+2019-01-11 20:23:50.914 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5874/dist/__webpack_hmr  
+2019-01-11 20:23:57.957 +02:00 [INF] webpack built 0c8a246498050d9c511d in 21145ms
+2019-01-11 20:23:58.041 +02:00 [ERR] Hash: 0c8a246498050d9c511d
+Version: webpack 4.5.0
+Time: 21145ms
+Built at: 2019-1-11 20:23:57
+             Asset      Size       Chunks             Chunk Names
+    main-client.js  4.14 MiB  main-client  [emitted]  main-client
+main-client.js.map  28.5 KiB  main-client  [emitted]  main-client
+Entrypoint main-client = main-client.js main-client.js.map
+[./ClientApp/app/app.browser.module.ts] 1.45 KiB {main-client} [built]
+[./ClientApp/boot.browser.ts] 989 bytes {main-client} [built]
+[./node_modules/@angular/core/fesm5/core.js] 665 KiB {main-client} [built] [2 warnings]
+[./node_modules/@angular/platform-browser-dynamic/fesm5/platform-browser-dynamic.js] 20.2 KiB {main-client} [built]
+[./node_modules/bootstrap/dist/js/npm.js] delegated ./node_modules/bootstrap/dist/js/npm.js from dll-reference vendor_4adf5b975b06d7f766a2 42 bytes {main-client} [built]
+[./node_modules/event-source-polyfill/src/eventsource.js] 20.9 KiB {main-client} [built]
+[./node_modules/querystring-es3/index.js] 127 bytes {main-client} [built]
+[./node_modules/reflect-metadata/Reflect.js] 51.1 KiB {main-client} [built]
+[./node_modules/strip-ansi/index.js] 161 bytes {main-client} [built]
+[./node_modules/webpack-hot-middleware/client-overlay.js] (webpack)-hot-middleware/client-overlay.js 2.16 KiB {main-client} [built]
+[./node_modules/webpack-hot-middleware/client.js?path=__webpack_hmr&dynamicPublicPath=true] (webpack)-hot-middleware/client.js?path=__webpack_hmr&dynamicPublicPath=true 7.18 KiB {main-client} [built]
+[./node_modules/webpack-hot-middleware/process-update.js] (webpack)-hot-middleware/process-update.js 4.23 KiB {main-client} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 519 bytes {main-client} [built]
+   [0] multi event-source-polyfill webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot.browser.ts 52 bytes {main-client} [built]
+[./node_modules/zone.js/dist/zone.js] delegated ./node_modules/zone.js/dist/zone.js from dll-reference vendor_4adf5b975b06d7f766a2 42 bytes {main-client} [built]
+    + 275 hidden modules
+
+WARNING in ./node_modules/@angular/core/fesm5/core.js
+5556:15-36 Critical dependency: the request of a dependency is an expression
+ @ ./node_modules/@angular/core/fesm5/core.js
+ @ ./ClientApp/boot.browser.ts
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot.browser.ts
+
+WARNING in ./node_modules/@angular/core/fesm5/core.js
+5568:15-102 Critical dependency: the request of a dependency is an expression
+ @ ./node_modules/@angular/core/fesm5/core.js
+ @ ./ClientApp/boot.browser.ts
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot.browser.ts
+
+WARNING in ./node_modules/@angular/core/fesm5/core.js
+System.import() is deprecated and will be removed soon. Use import() instead.
+For more info visit https://webpack.js.org/guides/code-splitting/
+ @ ./ClientApp/boot.browser.ts 5556:15-36 4:0-47
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot.browser.ts
+
+WARNING in ./node_modules/@angular/core/fesm5/core.js
+System.import() is deprecated and will be removed soon. Use import() instead.
+For more info visit https://webpack.js.org/guides/code-splitting/
+ @ ./ClientApp/boot.browser.ts 5568:15-102 4:0-47
+ @ multi event-source-polyfill webpack-hot-middleware/client?path=__webpack_hmr&dynamicPublicPath=true ./ClientApp/boot.browser.ts
+2019-01-11 20:23:58.229 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5874/dist/f48835137dbec6fdd9aa.hot-update.json  
+2019-01-11 20:23:58.558 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-01-11 20:23:59.426 +02:00 [ERR] An unhandled exception has occurred while executing the request
+System.AggregateException: One or more errors occurred. (One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! missing script: start
+
+
+
+)) ---> System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! missing script: start
+
+
+
+) ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! missing script: start
+
+
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<>c.<Attach>b__2_0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Util.TaskTimeoutExtensions.<WithTimeout>d__1`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.<PerformProxyRequest>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.<Invoke>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+---> (Inner Exception #0) System.AggregateException: One or more errors occurred. (The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! missing script: start
+
+
+
+) ---> System.InvalidOperationException: The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! missing script: start
+
+
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<>c.<Attach>b__2_0(Task`1 task)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+---> (Inner Exception #0) System.InvalidOperationException: The NPM script 'start' exited without indicating that the Angular CLI was listening for requests. The error output was: npm ERR! missing script: start
+
+
+
+ ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.AngularCli.AngularCliMiddleware.<StartAngularCliServerAsync>d__3.MoveNext()<---
+<---
+
+2019-01-11 20:23:59.922 +02:00 [INF] Request finished in 1691.0225ms 500 text/html; charset=utf-8
+2019-01-11 20:24:43.970 +02:00 [ERR] An unhandled exception has occurred while executing the request
+System.IO.IOException: The read operation failed, see inner exception. ---> System.Net.Http.WinHttpException: Соединение с сервером было неожиданно прервано
+   --- End of inner exception stack trace ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Threading.Tasks.RendezvousAwaitable`1.GetResult()
+   at System.Net.Http.WinHttpResponseStream.<CopyToAsyncCore>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<PerformProxyRequest>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2019-01-11 20:24:43.983 +02:00 [WRN] The response has already started, the error page middleware will not be executed.
+2019-01-11 20:24:43.986 +02:00 [ERR] Connection id "0HLJNU7NNGDQC", Request id "0HLJNU7NNGDQC:00000001": An unhandled exception was thrown by the application.
+System.IO.IOException: The read operation failed, see inner exception. ---> System.Net.Http.WinHttpException: Соединение с сервером было неожиданно прервано
+   --- End of inner exception stack trace ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Threading.Tasks.RendezvousAwaitable`1.GetResult()
+   at System.Net.Http.WinHttpResponseStream.<CopyToAsyncCore>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<PerformProxyRequest>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.SpaServices.Webpack.ConditionalProxyMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame`1.<ProcessRequestsAsync>d__2.MoveNext()
+2019-01-11 20:24:44.018 +02:00 [INF] Request finished in 53134.9663ms 200 text/event-stream; charset=utf-8

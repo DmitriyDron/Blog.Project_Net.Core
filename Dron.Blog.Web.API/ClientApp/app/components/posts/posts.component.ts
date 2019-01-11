@@ -7,7 +7,7 @@ import { PostQuery } from '../../models/post-query.model';
 import { Category } from '../../models/category.model';
 import { Post } from '../../models/post.model';
 import { Tag } from '../../models/tag.model';
-
+//import '../../utils/extensions';
 
 @Component({
   selector: 'app-posts',

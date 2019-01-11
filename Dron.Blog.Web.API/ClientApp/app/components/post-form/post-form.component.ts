@@ -6,11 +6,10 @@ import { ToastyService } from 'ng2-toasty';
 import { PostService } from '../../services/post.service';
 import { CategoryService } from '../../services/category.service';
 import { TagService } from '../../services/tag.service';
-import { TagModel } from 'ngx-chips/core/accessor';
 import { SavePost } from '../../models/save-post.model';
 import { Category } from '../../models/category.model';
 import { Post } from '../../models/post.model';
-import '../../utils/extensions';
+//import '../../utils/extensions';
 
 @Component({
   selector: 'app-postform',

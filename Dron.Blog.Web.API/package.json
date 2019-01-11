@@ -2,7 +2,6 @@
   "name": "Dron.Blog.Web.API",
   "private": true,
   "version": "0.0.0",
-  
   "scripts": {
     "test": "karma start ClientApp/test/karma.conf.js"
   },
@@ -31,7 +30,7 @@
     "chalk": "2.3.0",
     "clone": "1.0.3",
     "coa": "1.0.4",
-    "css": "2.2.1",
+    "css": "^2.2.4",
     "css-loader": "0.28.9",
     "es6-shim": "0.35.3",
     "event-source-polyfill": "0.0.12",
@@ -62,12 +61,12 @@
     "@types/jasmine": "2.8.6",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "jasmine-core": "2.99.1",
-    "karma": "2.0.0",
+    "karma": "^3.1.4",
     "karma-chai": "0.1.0",
     "karma-chrome-launcher": "2.2.0",
     "karma-cli": "1.0.1",
     "karma-jasmine": "1.1.1",
-    "karma-webpack": "2.0.9",
+    "karma-webpack": "^3.0.5",
     "mini-css-extract-plugin": "^0.4.0",
     "typescript": "2.7.2",
     "webpack": "4.5.0",
