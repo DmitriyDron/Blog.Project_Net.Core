@@ -32,7 +32,7 @@ namespace Blog.Web.API.Controllers
         }
 
         [HttpPost]
-      //  [Authorize]
+        [Authorize]
         public async Task<IActionResult> CreateCategory([FromBody] SaveCategoryDTO saveCategory)
         {
             if (!ModelState.IsValid)
@@ -52,7 +52,7 @@ namespace Blog.Web.API.Controllers
         }
 
         [HttpDelete("{id}")]
-      //  [Authorize]
+        [Authorize]
         public async Task<IActionResult> DeleteCategory([FromRoute] int id)
         {
             categoryService.Remove(id);

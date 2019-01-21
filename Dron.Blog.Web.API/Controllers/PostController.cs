@@ -42,7 +42,7 @@ namespace Blog.Web.API.Controllers
             return await postService.GetBlogViewModels(query);
         }
 
-        [HttpGet("admin")]
+        [HttpGet]
         public async Task<QueryResult<PostDTO>> GetAdminQuery(PostQueryDTO query)
         {
             return await postService.GetAdminViewModels(query);
@@ -58,21 +58,21 @@ namespace Blog.Web.API.Controllers
         }
 
         [HttpPut("{id}")]
-     //   [Authorize]
+    
         public async Task<IActionResult> UpdatePost([FromRoute] int id, [FromBody] SavePostDTO savePost)
         {
             return await UpdateOrCreate(id, savePost);
         }
 
         [HttpPost]
-     //   [Authorize]
+     
         public async Task<IActionResult> CreatePost([FromBody] SavePostDTO savePost)
         {
             return await UpdateOrCreate(null, savePost);
         }
 
         [HttpDelete("{id}")]
-     //   [Authorize]
+   
         public async Task<IActionResult> DeletePost([FromRoute] int id)
         {
             postService.Remove(id);

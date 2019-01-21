@@ -1,0 +1,23 @@
+
+
+<form class="register">
+
+    <h1 class="register-title">Register</h1>
+    <div class="alert alert-info" role="alert">
+        {{message}}
+    </div>
+    <div class="form-group">
+        <input type="text" required placeholder="Username" name="username" class="form-control" [(ngModel)]="user.username">
+    </div>
+    <div class="form-group">
+        <input type="text" required placeholder="Email" name="email" class="form-control" [(ngModel)]="user.email">
+    </div>
+    <div class="form-group">
+        <input type="password" required placeholder="Password" name="password" class="form-control" [(ngModel)]="user.password">
+    </div>
+    <div class="form-group">
+        <input type="password" required placeholder="Confirm password" name="confirmPassword" class="form-control" [(ngModel)]="user.confirmPassword">
+    </div>
+    <input type="submit" (click)="register()" value="Lets Go" class="register-button">
+    <p class="register-lost">Already registered?  <a (click)="goLoginComponent()">Sign in</a></p>
+</form>

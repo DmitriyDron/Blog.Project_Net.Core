@@ -10,7 +10,7 @@ using Blog.Web.Core.Controllers;
 namespace Blog.Web.API.Controllers
 {
   
-    public class TagsController:BaseController
+    public class TagsController:AuthorizedController
     {
         private readonly ITagService tagService;
 

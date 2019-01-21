@@ -2,9 +2,9 @@
     <h1 class="small-logo-text">Blog</h1>
   </div>
   
-  <h2 *ngIf="pageNotFound">Post Not Found</h2>
   
-  <div *ngIf="!pageNotFound" class="container">
+  
+  <div  class="container">
       <!-- Tags -->
       <div>
           <a class="tag" *ngFor="let tag of post.tags" [routerLink]="['/tag/', tag.id]">{{tag.name}}</a>

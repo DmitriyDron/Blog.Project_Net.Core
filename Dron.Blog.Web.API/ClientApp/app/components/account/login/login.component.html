@@ -1,0 +1,19 @@
+
+
+<form class="login">
+
+    <h1 class="login-title">Login</h1>
+    <div class="alert alert-info" role="alert">
+        {{loginMessage}}
+    </div>
+        <div class="form-group">
+
+            <input type="text" name="username" placeholder="Username" class="form-control" [(ngModel)]="user.userNameOrEmail">
+        </div>
+        <div class="form-group">
+
+            <input type="password" name="password" placeholder="Password" class="form-control" [(ngModel)]="user.password">
+        </div>
+        <input type="submit" (click)="login()" value="Lets Go" class="login-button">
+        <p class="login-lost">Not registered? <a (click)="goRegisterComponent()">Create an account</a></p>
+</form>

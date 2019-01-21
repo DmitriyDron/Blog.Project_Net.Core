@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { ActivatedRoute, Router } from '@angular/router';
 import { PostService } from '../../services/post.service';
-//import '../../utils/extensions';
+import '../../extensions/extensions';
 import { Post } from '../../models/post.model';
 
 @Component({

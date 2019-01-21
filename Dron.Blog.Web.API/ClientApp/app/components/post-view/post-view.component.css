@@ -1,9 +1,12 @@
 .small-logo-text {
-    color: #41bcc7b5;
-    font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 30px;
-    text-align: center;
+  color: #c9d0d4; 
+  font-family: 'Helvetica Neue', sans-serif; 
+  font-size: 46px; 
+  font-weight: 100; 
+  line-height: 50px; 
+  letter-spacing: 1px; 
+  padding: 0 0 40px; 
+  border-bottom: double #555; 
   }
   
   .tag {

@@ -16,8 +16,6 @@ namespace Blog.DAL.Interfaces.Repositories
 
         Task<ICollection<TEntity>> GetAllAsync();
 
-       
-
         TEntity GetById(int id);
 
         Task<TEntity> GetByIdAsync(int id);

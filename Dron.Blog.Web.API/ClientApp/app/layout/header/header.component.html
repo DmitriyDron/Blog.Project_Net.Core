@@ -1,0 +1,14 @@
+<header>
+    <img src="https://www.mediaonmars.com.au/wp-content/uploads/2017/07/4-keep-it-simple-310x310.png">
+     <nav>
+         <ul>
+             <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+             <li *ngIf="authService.getStatus()">
+                 <a routerLink="/login"  (click)="logOut()">
+                    <span>Log Out</span></a>
+                </li>
+                <li *ngIf="!authService.getStatus()">
+                    <a routerLink="/login" routerLinkActive="active">Login</a></li>
+                </ul>
+            </nav>
+</header>

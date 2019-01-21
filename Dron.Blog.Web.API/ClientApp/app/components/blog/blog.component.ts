@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { PostQuery } from '../../models/post-query.model';
 import { Post } from '../../models/post.model';
 import { Tag } from '../../models/tag.model';
-//import '../../utils/extensions';
+import '../../extensions/extensions';
 
 @Component({
     selector: 'app-blog',

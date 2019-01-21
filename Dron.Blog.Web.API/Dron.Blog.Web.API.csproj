@@ -33,7 +33,9 @@
     <Content Remove="ClientApp\**" />
   </ItemGroup>
 
-
+  <ItemGroup>
+    <Folder Include="ClientApp\app\models\" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Blog.BLL\Blog.BLL.csproj" />

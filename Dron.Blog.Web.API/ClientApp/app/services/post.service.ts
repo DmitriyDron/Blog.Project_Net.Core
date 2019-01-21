@@ -33,7 +33,7 @@ export class PostService {
             );
     }
     getPost(id: number): Observable<Post> {
-        return this.http.get(`${this.vehiclesEndpoint,{ withCredentials: true }}/${id}`).pipe(
+        return this.http.get(`${this.vehiclesEndpoint}/${id}`).pipe(
                 map((res: any) => res.json() as Post)
             );
     }

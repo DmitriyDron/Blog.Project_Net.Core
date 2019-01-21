@@ -43,6 +43,7 @@ namespace Blog.Web.API.Controllers
             var userToVerify = await CreateClaimsIdentityAsync(input.UserNameOrEmail, input.Password);
             if (userToVerify == null)
             {
+
                 return BadRequest(new List<NameValueDTO>
                 {
                     new NameValueDTO("UserNameOrPasswordIncorrect", "The user name or password is incorrect!")

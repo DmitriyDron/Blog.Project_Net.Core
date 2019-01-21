@@ -1,29 +1,33 @@
 .posts-table {
-  font-size: 14px;
+    font-size: 14px;
 }
 
-  .posts-table > tbody > tr > td {
-    border-top: 1px solid #ddd
-  }
+    .posts-table > tbody > tr > td {
+        border-top: 1px solid #ddd
+    }
 
 th {
-  text-align: center;
+    text-align: center;
 }
 
+.id-column {
+}
 
 .title-column {
-  width: 200px;
+    width: 200px;
 }
 
+.category-column {
+}
 
 .tag-column {
-  width: 180px;
+    width: 180px;
 }
 
 .date-column {
-  width: 80px;
+    width: 80px;
 }
 
 .menu-column {
-  width: 130px;
+    width: 130px;
 }

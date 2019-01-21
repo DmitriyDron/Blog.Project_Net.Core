@@ -9,7 +9,7 @@ import { TagService } from '../../services/tag.service';
 import { SavePost } from '../../models/save-post.model';
 import { Category } from '../../models/category.model';
 import { Post } from '../../models/post.model';
-//import '../../utils/extensions';
+import '../../extensions/extensions';
 
 @Component({
   selector: 'app-postform',
@@ -92,9 +92,9 @@ export class PostformComponent implements OnInit {
         this.postService.getPost(this.id)
             .subscribe(post => {
                 this.setForm(post)
-                this.dateCreated = post.dateCreated.toDDMMYYYY('.');
+              //  this.dateCreated = post.dateCreated.toDDMMYYYY('.');
             }, err => {
-                this.router.navigate(['/admin']);
+                this.router.navigate(['/posts']);
                 this.showErrorMessage('Post not found');
             });
     }

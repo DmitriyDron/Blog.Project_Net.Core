@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const merge = require('webpack-merge');
+const UglifyJsWebpackPlugin = require('uglifyjs-webpack-plugin');
 const treeShakableModules = [
     '@angular/animations',
     '@angular/common',
@@ -20,7 +21,13 @@ const nonTreeShakableModules = [
     'es6-promise',
     'es6-shim',
     'event-source-polyfill',
+    'font-awesome/css/font-awesome.css',
+    'ng2-toasty',
+    'ng2-toasty/bundles/style-bootstrap.css',
+    'ngx-chips',
+    'underscore',
     'jquery',
+   // 'font-awesome/css/font-awesome.css'
 ];
 const allModules = treeShakableModules.concat(nonTreeShakableModules);
 
@@ -28,6 +35,7 @@ module.exports = (env) => {
     const extractCSS = new ExtractTextPlugin('vendor.css');
     const isDevBuild = !(env && env.prod);
     const sharedConfig = {
+        mode: 'development',
         stats: { modules: false },
         resolve: { extensions: [ '.js' ] },
         module: {
@@ -43,8 +51,8 @@ module.exports = (env) => {
         plugins: [
             new webpack.ProvidePlugin({ $: 'jquery', jQuery: 'jquery' }), // Maps these identifiers to the jQuery package (because Bootstrap expects it to be a global variable)
             new webpack.ContextReplacementPlugin(/\@angular\b.*\b(bundles|linker)/, path.join(__dirname, './ClientApp')), // Workaround for https://github.com/angular/angular/issues/11580
-            new webpack.ContextReplacementPlugin(/angular(\\|\/)core(\\|\/)@angular/, path.join(__dirname, './ClientApp')), // Workaround for https://github.com/angular/angular/issues/14898
-            new webpack.IgnorePlugin(/^vertx$/) // Workaround for https://github.com/stefanpenner/es6-promise/issues/100
+            new webpack.ContextReplacementPlugin(/(.+)?angular(\\|\/)core(.+)?/, path.join(__dirname, './ClientApp'), {}),
+            new webpack.IgnorePlugin(/^vertx$/), // Workaround for https://github.com/stefanpenner/es6-promise/issues/100
         ]
     };
 
@@ -60,15 +68,22 @@ module.exports = (env) => {
                 { test: /\.css(\?|$)/, use: extractCSS.extract({ use: isDevBuild ? 'css-loader' : 'css-loader?minimize' }) }
             ]
         },
+        optimization : {
+            minimizer: [
+                new UglifyJsWebpackPlugin({
+                    cache: true,
+                    parallel: true,
+                    sourceMap: true
+                })
+            ]
+        },
         plugins: [
             extractCSS,
             new webpack.DllPlugin({
                 path: path.join(__dirname, 'wwwroot', 'dist', '[name]-manifest.json'),
                 name: '[name]_[hash]'
             })
-        ].concat(isDevBuild ? [] : [
-            new webpack.optimize.UglifyJsPlugin()
-        ])
+        ]
     });
 
     const serverBundleConfig = merge(sharedConfig, {
